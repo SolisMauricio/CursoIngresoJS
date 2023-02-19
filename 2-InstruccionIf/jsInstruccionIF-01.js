@@ -10,6 +10,7 @@ A tener en cuenta: Si preguntamos la altura del usuario y no puede subir no debe
 preguntarle la edad.*/
 function mostrar()
 { 
+/* Mauricio Solis del Castillo. DIV Z: Grupo 2. IF integrador 4 */
 	var altura;
 	var edad;
 	var alturaMinima;
@@ -18,21 +19,28 @@ function mostrar()
 
 	altura = prompt("Ingrese altura");
 	altura = parseInt(altura);
-	edad = prompt("Ingrese edad");
 
 	if(altura < alturaMinima)
 	{
-		mensajeSiNoSube = "No tiene la altura suficiente para subir."
+		alert("No tiene la altura suficiente para subir.");
 	}
 	else
 	{
-		edad;
+		edad = prompt("Ingrese edad");
 	}
-	alert(mensajeSiNoSube);
-
-
-
+	if(edad < 18 || edad >80)
+	{
+		alert("El monto a pagar es de 200$");
+	}
+	else
+	{
+		if(edad > 17 || edad <= 80)
+		{
+			alert("El monto a pagar es de 400$");
+		}
+	}
 }
+
 
 
 
