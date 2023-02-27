@@ -17,10 +17,25 @@ function mostrar()
 	{
 		numeroIngresado = prompt("Ingrese un numero: ")
 		numeroIngresado = parseFloat(numeroIngresado);
-
 		
 		acumulador = acumulador + numeroIngresado;
-
+		
+		if(numeroIngresado > 0)
+		{
+			sumaPositivos = acumulador;
+		}
+		else 
+		{
+			if(numeroIngresado < 0)
+			{
+				multiplicacionNegativos = numeroIngresado * numeroIngresado;
+			}
+		}
+		respuesta = prompt("Desea seguir ingresando numeros? (si|no)");
+		while(respuesta != "si" && respuesta != "no")
+		{
+			respuesta = prompt("Desea seguir ingresando numeros? (si|no)");
+		}
 	}
 
 
